@@ -1,0 +1,207 @@
+//Traversal Operation 
+
+#include <stdio.h>  
+
+void main() {  
+
+   int Arr[5] = {18, 30, 15, 70, 12};  
+
+int i;  
+
+   printf("Elements of the array are:\n");  
+
+   for(i = 0; i<5; i++) {  
+
+      printf("Arr[%d] = %d,  ", i, Arr[i]);  
+
+   }  
+
+}  
+
+//Insertion Operation 
+
+#include <stdio.h>  
+
+int main()  
+
+{  
+
+    int arr[20] = { 18, 30, 15, 70, 12 };  
+
+    int i, x, pos, n = 5;  
+
+    printf("Array elements before insertion\n");  
+
+    for (i = 0; i < n; i++)  
+
+        printf("%d ", arr[i]);  
+
+    printf("\n");  
+
+  
+
+    x = 50; // element to be inserted  
+
+    pos = 4;  
+
+    n++;  
+
+  
+
+    for (i = n-1; i >= pos; i--)  
+
+        arr[i] = arr[i - 1];  
+
+    arr[pos - 1] = x;  
+
+    printf("Array elements after insertion\n");  
+
+    for (i = 0; i < n; i++)  
+
+        printf("%d ", arr[i]);  
+
+    printf("\n");  
+
+    return 0;  
+
+}  
+
+//Deletion Operation 
+#include <stdio.h>  
+
+  
+
+void main() {  
+
+   int arr[] = {18, 30, 15, 70, 12};  
+
+   int k = 30, n = 5;  
+
+   int i, j;  
+
+     
+
+   printf("Given array elements are :\n");  
+
+      
+
+   for(i = 0; i<n; i++) {  
+
+      printf("arr[%d] = %d,  ", i, arr[i]);  
+
+   }  
+
+      
+
+   j = k;  
+
+      
+
+   while( j < n) {  
+
+      arr[j-1] = arr[j];  
+
+      j = j + 1;  
+
+   }  
+
+      
+
+   n = n -1;  
+
+     
+
+   printf("\nElements of array after deletion:\n");  
+
+      
+
+   for(i = 0; i<n; i++) {  
+
+      printf("arr[%d] = %d,  ", i, arr[i]);  
+
+   }  
+
+}  
+//Search Operation
+#include <stdio.h>  
+
+  
+
+void main() {  
+
+   int arr[5] = {18, 30, 15, 70, 12};  
+
+   int item = 70, i, j=0 ;  
+
+     
+
+   printf("Given array elements are :\n");  
+
+      
+
+   for(i = 0; i<5; i++) {  
+
+      printf("arr[%d] = %d,  ", i, arr[i]);  
+
+   }  
+
+    printf("\nElement to be searched = %d", item);  
+
+   while( j < 5){  
+
+      if( arr[j] == item ) {  
+
+         break;  
+
+      }  
+
+          
+
+      j = j + 1;  
+
+   }  
+
+      
+
+   printf("\nElement %d is found at %d position", item, j+1);  
+
+}  
+//Update Operation
+#include <stdio.h>  
+
+  
+
+void main() {  
+
+   int arr[5] = {18, 30, 15, 70, 12};  
+
+   int item = 50, i, pos = 3;  
+
+     
+
+   printf("Given array elements are :\n");  
+
+      
+
+   for(i = 0; i<5; i++) {  
+
+      printf("arr[%d] = %d,  ", i, arr[i]);  
+
+   }  
+
+      
+
+arr[pos-1] = item;    
+
+   printf("\nArray elements after updation :\n");  
+
+      
+
+   for(i = 0; i<5; i++) {  
+
+      printf("arr[%d] = %d,  ", i, arr[i]);  
+
+   }  
+
+}  
+
